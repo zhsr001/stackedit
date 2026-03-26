@@ -24,6 +24,9 @@
     "major": "npm version major -m \"Tag v%s\"",
     "chart": "mkdir -p dist && rm -rf dist/stackedit && cp -r chart dist/stackedit && sed -i.bak -e s/STACKEDIT_VERSION/$npm_package_version/g dist/stackedit/*.yaml && rm dist/stackedit/*.yaml.bak"
   },
+   "overrides": {
+     "midi": "git+https://github.com/paulrosen/MIDI.js.git#e593ffef81a0350f99448e3ab8111957145ff6b2"
+   },
   "dependencies": {
     "@vue/test-utils": "^1.0.0-beta.16",
     "abcjs": "^5.2.0",
